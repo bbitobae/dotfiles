@@ -1,0 +1,27 @@
+#!/usr/bin/bash
+
+# variables
+config=$HOME/.config/hypr
+scripts=$config/scripts
+wallpaper=$HOME/.wallpapers
+
+# notification daemon
+dunst &
+
+# waybar
+$scripts/launch_waybar &
+$scripts/tools/dynamic &
+
+# wallpaper
+$scripts/wall $wallpaper/forest1.jpg &
+
+# effects
+$scripts/rgb &
+
+# gammastep
+# gammastep -l 51.2:4.4 -t 5700:3000 -g 0.8 -m wayland
+
+# other
+# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+
