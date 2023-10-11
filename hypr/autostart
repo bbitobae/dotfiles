@@ -13,7 +13,7 @@ $scripts/launch_waybar &
 $scripts/tools/dynamic &
 
 # wallpaper
-$scripts/wall $wallpaper/forest1.jpg &
+# $scripts/wall $wallpaper/forest1.jpg &
 
 # effects
 $scripts/rgb &

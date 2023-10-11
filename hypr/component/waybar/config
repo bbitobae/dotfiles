@@ -3,8 +3,7 @@
     "position": "top",
     "height": 14,
     "margin": "4, 8, 0, 8",
-    "modules-left": ["custom/wall", "wlr/workspaces"],
-    "modules-center": ["hyprland/window"], //sway/window
+    "modules-left": ["hyprland/workspaces"],
     "modules-right": ["tray", "cpu", "memory", "disk", "temperature", "backlight", "pulseaudio", "network", "battery", "clock"],
 
     "wlr/workspaces": {
@@ -15,6 +14,10 @@
         "format-icons":{
              "10":"10"
         }
+    },
+
+    "hyprland/workspaces": {
+        "format": "{id}",
     },
 
     "hyprland/window": {
